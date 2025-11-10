@@ -34,13 +34,13 @@
                     <!-- Input Card -->
                     <div class="mb-3 col-12 col-md-4 col-lg-5">
                         <label for="inputCard" class="form-label">Card #</label>
-                        <input type="text" class="form-control" id="inputCard" name="inputCard" aria-label="Enter Number of Credit Card" placeholder="XXXXXXXXXXXXXXXX" minlength="16" maxlength="16" />
+                        <input type="text" class="form-control" id="inputCard" name="inputCard" aria-label="Enter Number of Credit Card" placeholder="XXXXXXXXXXXXXXXX" minlength="16" maxlength="16" required/>
                     </div>
 
                     <!-- Input CVC -->
                     <div class="mb-3 col-12 col-md-4 col-lg-3">
                         <label for="inputCVC" class="form-label">CVC #</label>
-                        <input type="text" class="form-control" id="inputCVC" name="inputCVC" aria-label="Enter CVC" placeholder="000" minlength="3" maxlength="3" />
+                        <input type="text" class="form-control" id="inputCVC" name="inputCVC" aria-label="Enter CVC" placeholder="000" minlength="3" maxlength="3" required/>
                     </div>
                     
                     <!-- Input Amount -->
@@ -48,32 +48,32 @@
                         <label for="inputAmount" class="form-label">Amount</label>
                         <div class="input-group">
                             <span class="input-group-text">$</span>
-                            <input type="text" class="form-control" id="inputAmount" name="inputAmount" aria-label="Enter Amount" placeholder="Amount">
+                            <input type="text" class="form-control" id="inputAmount" name="inputAmount" aria-label="Enter Amount" placeholder="Amount" required>
                         </div>
                     </div>
 
                     <!-- Input First Name -->
                     <div class="mb-3 col-12 col-md-6 col-lg-6">
                         <label for="inputFirstName" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="inputFirstName" name="inputFirstName" aria-label="Enter First Name" maxlength="35" />
+                        <input type="text" class="form-control" id="inputFirstName" name="inputFirstName" aria-label="Enter First Name" maxlength="35" required />
                     </div>
                     
                     <!-- Input Last Name -->
                     <div class="mb-3 col-12 col-md-6 col-lg-6">
                         <label for="inputLastName" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="inputLastName" name="inputLastName" aria-label="Enter Last Name" maxlength="35" />
+                        <input type="text" class="form-control" id="inputLastName" name="inputLastName" aria-label="Enter Last Name" maxlength="35" required />
                     </div>
                     
                     <!-- Input City -->
                     <div class="mb-3 col-12 col-md-4 col-lg-6">
                         <label for="inputCity" class="form-label">City</label>
-                        <input type="text" class="form-control" id="inputCity" name="inputCity" aria-label="Enter City" maxlength="35" />
+                        <input type="text" class="form-control" id="inputCity" name="inputCity" aria-label="Enter City" maxlength="35" required />
                     </div>
                     
                     <!-- Input State -->
                     <div class="mb-3 col-12 col-md-4 col-lg-3">
                         <label for="inputState" class="form-label">Province</label>
-                        <select class="form-select" id="inputState" name="inputState" aria-label="State selector">
+                        <select class="form-select" id="inputState" name="inputState" aria-label="State selector" required>
                             <option selected>Pick a province</option>
                             <option value="coruna">A Coruña</option>
                             <option value="lugo">Lugo</option>
@@ -86,7 +86,7 @@
                     <!-- Input Postal Code -->
                     <div class="mb-3 col-12 col-md-4 col-lg-3">
                         <label for="inputPostalCode" class="form-label">Postal Code</label>
-                        <input type="text" class="form-control" id="inputPostalCode" name="inputPostalCode" aria-label="Enter Postal Code" placeholder="00000" minlength="5" maxlength="5" />
+                        <input type="text" class="form-control" id="inputPostalCode" name="inputPostalCode" aria-label="Enter Postal Code" placeholder="00000" minlength="5" maxlength="5" required/>
                     </div>
 
                     <!-- Input Type of Card -->
@@ -97,26 +97,25 @@
                             <!-- Input Type of Card: Mastercard -->
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inputTypeOfCard" id="Mastercard" value="Mastercard">
-                                <label class="form-check-label" for="inputTypeOfCard"><i
-                                        class="fa-brands fa-cc-mastercard fa-xl"></i></label>
+                                <label class="form-check-label" for="Mastercard"><i class="fa-brands fa-cc-mastercard fa-xl"></i></label>
                             </div>
                     
                             <!-- Input Type of Card: Visa -->
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inputTypeOfCard" id="visa" value="Visa">
-                                <label class="form-check-label" for="inputTypeOfCard"><i class="fa-brands fa-cc-visa fa-xl"></i></label>
+                                <label class="form-check-label" for="visa"><i class="fa-brands fa-cc-visa fa-xl"></i></label>
                             </div>
                     
                             <!-- Input Type of Card: PayPal -->
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inputTypeOfCard" id="PayPal" value="PayPal">
-                                <label class="form-check-label" for="inputTypeOfCard"><i class="fa-brands fa-cc-paypal fa-xl"></i></label>
+                                <label class="form-check-label" for="PayPal"><i class="fa-brands fa-cc-paypal fa-xl"></i></label>
                             </div>
                     
                             <!-- Input Type of Card: PiggyBank -->
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="inputTypeOfCard" id="PiggyBank" value="PiggyBank">
-                                <label class="form-check-label" for="inputTypeOfCard"><i class="fa-solid fa-piggy-bank fa-xl"></i></label>
+                                <label class="form-check-label" for="PiggyBank"><i class="fa-solid fa-piggy-bank fa-xl"></i></label>
                             </div>
                         </div>
                     </div>
